@@ -1,0 +1,3 @@
+interface:
+  display_name: "Claude Code on GLM (CCR relay)"
+  short_description: "Deploy local Claude Code against Zhipu GLM via CCR"

@@ -1,0 +1,12 @@
+# local junk that must never be published
+node_modules/
+*.log
+*.bak
+*.bak_*
+.env
+
+# keep secrets out: these are the files that hold plaintext API keys
+config.sqlite
+config.sqlite-wal
+config.sqlite-shm
+settings.json.bak*
