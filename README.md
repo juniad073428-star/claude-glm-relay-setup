@@ -74,7 +74,7 @@ If you run this on macOS or Linux, please open an issue with what happened.
 ### B. As a Codex skill
 
 ```bash
-git clone https://github.com/<owner>/claude-glm-relay-setup.git
+git clone https://github.com/juniad073428-star/claude-glm-relay-setup.git
 ```
 
 Then put the folder where Codex looks for skills:

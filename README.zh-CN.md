@@ -74,7 +74,7 @@
 ### B. 作为 Codex skill 安装
 
 ```bash
-git clone https://github.com/<owner>/claude-glm-relay-setup.git
+git clone https://github.com/juniad073428-star/claude-glm-relay-setup.git
 ```
 
 然后把整个文件夹放到 Codex 的 skills 目录：
