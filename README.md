@@ -130,6 +130,16 @@ Nothing else is touched. The skill explicitly tells the agent not to install unr
 
 See [`references/troubleshooting.md`](references/troubleshooting.md) — an error-by-error table covering auth, plans, model capabilities, a dead gateway, and where every config file lives.
 
+## Working on this repository
+
+`tools/pre-commit-check.js` guards the repo. It blocks a commit that contains something looking like an API key, non-ASCII bytes inside a `.cmd`/`.bat`/`.ps1` file, a markdown link in `SKILL.md` that points nowhere, or invalid frontmatter. Install it once per clone:
+
+```bash
+node tools/pre-commit-check.js --install
+```
+
+You can also run it by hand at any time (`node tools/pre-commit-check.js`); it then checks every tracked file.
+
 ## Prior art
 
 This is not the first project in this space. Before maintaining your own, consider:

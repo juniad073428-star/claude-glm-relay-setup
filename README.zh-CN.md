@@ -130,6 +130,16 @@ git clone https://github.com/juniad073428-star/claude-glm-relay-setup.git
 
 见 [`references/troubleshooting.md`](references/troubleshooting.md)——按现象查的报错对照表，覆盖认证、套餐、模型能力、网关挂掉，以及每个配置文件的位置。
 
+## 维护本仓库
+
+`tools/pre-commit-check.js` 是这个仓库的守卫。它会在提交前拦住这几类东西：看起来像 API Key 的字符串、`.cmd`/`.bat`/`.ps1` 里的非 ASCII 字节、`SKILL.md` 里指向不存在路径的链接、以及不合法的 frontmatter。每个 clone 装一次：
+
+```bash
+node tools/pre-commit-check.js --install
+```
+
+也可以随时手动跑一遍（`node tools/pre-commit-check.js`），这时它会检查全部已跟踪文件。
+
 ## 同类项目
 
 这不是这个领域里的第一个项目。在决定自己维护之前，可以先看：
